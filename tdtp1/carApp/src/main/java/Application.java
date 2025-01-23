@@ -8,9 +8,9 @@ public class Application {
         Driver me = new Driver("John", myAge);
 
         me.demarrerVoiture(myCar);
-        myCar.accelerer();
+        myCar.speedUp();
         me.changerVitesse(myCar, speedMax);
-        myCar.ralentir();
+        myCar.slowDown();
         me.changerVitesse(myCar, speedMin);
         me.arreterVoiture(myCar);
         System.out.println(endMsg);

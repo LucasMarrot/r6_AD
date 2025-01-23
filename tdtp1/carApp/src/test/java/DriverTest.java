@@ -35,6 +35,6 @@ public class DriverTest {
         Car car = new Car("Sedan", "Bleu");
 
         driver.changerVitesse(car, 80);
-        assertThat(car.getVitesse()).isEqualTo(80);
+        assertThat(car.getSpeed()).isEqualTo(80);
     }
 }

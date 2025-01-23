@@ -26,13 +26,13 @@ public class Driver {
     public void changerVitesse(Car car, int nouvelleVitesse) {
         System.out.println(nom + " change la vitesse de la voiture à " + nouvelleVitesse);
         int vitesseActuelle;
-        if (car.getVitesse() >= nouvelleVitesse) {
-            while (car.getVitesse() > nouvelleVitesse) {
-                car.ralentir();
+        if (car.getSpeed() >= nouvelleVitesse) {
+            while (car.getSpeed() > nouvelleVitesse) {
+                car.slowDown();
             }
         } else  {
-            while (car.getVitesse() < nouvelleVitesse) {
-                car.accelerer();
+            while (car.getSpeed() < nouvelleVitesse) {
+                car.speedUp();
             }
         }
     }
