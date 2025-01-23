@@ -1,0 +1,24 @@
+Global :
+
+- Il faudrait angliciser le code
+- Les textes sont à revoir
+- Les tests ne sont pas conformes
+- Un adulte c’est 18 ans en France
+
+Application :
+
+- 
+
+Conducteur :
+
+- Dans les fonctions « demarrerVoiture » et « arreterVoiture », on demande une Voiture en paramètre qui n’est jamais utilisé dans le code
+
+Voiture :
+
+- Il y a une redondance du code, on pourrait faire une fonction « printDetails »
+
+
+Redondance de code
+Paramètres pas utilisés
+Nombres magiques
+Méthodes mal placées
