@@ -8,7 +8,7 @@ public class ClasseDerivee extends BaseClass{
      * @param number  - le nombre à doubler
      * @return  - 2*number
      */
-    private int doubleValue(int number) {
+    protected int doubleValue(int number) {
         return number + number;
     }
 }

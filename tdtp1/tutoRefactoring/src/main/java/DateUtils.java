@@ -8,7 +8,19 @@ public class DateUtils {
                 localDateNow.isBefore(endingDate);
     }
 
-    private static boolean isDateBetween(LocalDate startingDate, LocalDate endingDate, LocalDate localDateNow) {
+    private static boolean isDateBetween(LocalDate startingDate, LocalDate endingDate, LocalDate localDateNow, boolean inclusive) {
+        LocalDate startingDay;
+        LocalDate endingDay;
+
+        if (inclusive) {
+            startingDay = startingDate.minusDays(1);
+            endingDay = endingDate.plusDays(1);
+        }
+        else {
+            startingDay = startingDate;
+            endingDay = endingDate;
+        }
+
         return localDateNow.isAfter(startingDate)
                 &&
                 localDateNow.isBefore(endingDate);
